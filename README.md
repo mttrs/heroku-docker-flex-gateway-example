@@ -1,17 +1,11 @@
 # heroku-docker-flex-gateway-example
 
-Barebones example of deploying
-[the official Flex Gateway Docker image](https://hub.docker.com/r/mulesoft/flex-gateway)
-to Heroku.
-
-## DISCLAIMER
-The author of this article makes any warranties about the completeness, reliability and accuracy of this information. **Any action you take upon the information of this website is strictly at your own risk**, and the author will not be liable for any losses and damages in connection with the use of the website and the information provided.
+Barebones example of deploying [the official Flex Gateway Docker image](https://hub.docker.com/r/mulesoft/flex-gateway) to Heroku.
 
 # Prerequisites
-- A Heroku Account
-- A MuleSoft CloudHub Account
-- Docker desktop
-
+- Heroku account
+- MuleSoft CloudHub account
+- docker desktop
 
 ## How to install and run Flex Gateway (Connected mode) on Heroku
 
@@ -54,10 +48,10 @@ This package has been tested using the following:
 | Platform/Tool               | Version       |
 | --------------------------- | ------------- |
 | Heroku Common Runtime       |  -            |
-| Heroku Private Space        |     -         |
-| MuleSoft CloudHub Anypoint  | -             | 
-| Flex Gateway Docker image   | 1.6.0         | 
-| Docker desktop              | 4.21.1        | 
+| Heroku Private Space        |  -            |
+| MuleSoft CloudHub Anypoint  |  -            | 
+| Flex Gateway Docker image   | 1.6.2         | 
+| Docker desktop              | 4.27.1        | 
 
 
 ## Credits
@@ -65,9 +59,8 @@ Credits to the [owner](https://github.com/garciarodrigor) of the original projec
 
 ## Manual deployment
 
-You will need to create a Heroku account and install the Heroku CLI, eg.
-`$ brew install heroku`.
-
+Add a Flex Gateway in https://anypoint.mulesoft.com/cloudhub/#/console/home/gateways/create and create the `registration.yaml`.
+Clone this repository to your local and set up a Heroku app:
 ```
 $ git clone git@github.com:mttrs/heroku-docker-flex-gateway-example.git
 $ cd heroku-docker-flex-gateway-example
