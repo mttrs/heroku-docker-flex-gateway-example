@@ -65,6 +65,7 @@ Clone this repository to your local and set up a Heroku app:
 $ git clone git@github.com:mttrs/heroku-docker-flex-gateway-example.git
 $ cd heroku-docker-flex-gateway-example
 $ heroku create
+$ heroku stack:set container
 $ heroku config:set FLEX_REGISTRATION="$(cat registration.yaml)" FLEX_SERVICE_ENVOY_CONCURRENCY=1 FLEX_DYNAMIC_PORT_VALUE=8081
 $ git push heroku main
 $ heroku open
